@@ -1,0 +1,73 @@
+#jsCanvas{
+    width:500px;
+    height:500px;
+    background-color: azure;
+}
+
+.controls{
+    display: flex;
+}
+
+.top{
+    display:flex;
+}
+
+.button{
+    width: 80px;
+    height: 30px;
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.controls_colors{
+    padding: 10px 10px;
+    width: 330px;
+    height: 70px;
+    background-color: ghostwhite;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 2px;
+}
+
+.controls_color{
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+}
+
+/* 가상(추상)클래스 - 선택자:가상이벤트 */
+/* 특정 이벤트마다 적용할 스타일 설정 */
+.controls_color:active {
+    transform: scale(0.9);
+  }
+
+#info1{
+    padding-top: 10px;
+    padding-left: 5px;
+    width:50px;
+    height: 30px;
+}
+
+#stroke_info{
+    padding-left: 10px;
+    margin-left: 5px;
+    border: 2px solid gray;
+    width:50px;
+    height: 30px;
+}
+
+.info2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width:40px;
+    height: 60px;
+}
+
+.info3{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}

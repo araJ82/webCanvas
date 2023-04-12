@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web그림판</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <h2>그림판입니다. 그림을 그려보세요</h2>
+        <button onclick="save()" type="button" class="button">다운로드</button>
+    </div>
+    <hr>
+    <div class="controls">
+        <div class="controls_colors" id="jsColors">
+            <div onclick="change_color(this)" class="controls_color" style="background-color: red;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: orange;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: yellow;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: brown;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: olive;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: purple;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: plum;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: white;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: greenyellow;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: green;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: darkblue;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: skyblue;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: darkcyan;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: black;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: gainsboro;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: gray;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: whitesmoke;"></div>
+            <div onclick="change_color(this)" class="controls_color" style="background-color: white;"></div>
+        </div>
+        <div class="info1">
+            <div id="info1">선굵기</div>
+            <input oninput="ctx.lineWidth=this.value" type="text" id="stroke_info" min="1" max="10" value="1">
+        </div>
+        <div class="info2" id="info2" style="background-color: black;"></div>
+        <div class="info3">
+            <div id="info3_x">x:00</div>
+            <div id="info3_y">y:00</div>
+        </div>
+    </div>
+
+    <canvas id="jsCanvas" class="canvas" width="500px" height="500px"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
